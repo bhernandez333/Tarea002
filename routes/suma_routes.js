@@ -14,7 +14,8 @@ miRouter.get('/:val1/:val2', (req, res) => {
     var val2 = req.params.val2;
     resultado = suma_service.obtenerSumaValores(val1, val2);
     //res.send(resultado);
-    res.send(JSON.stringify(resultado.toString()));
+    res.send(resultado.toString());
+    //res.send(JSON.stringify(resultado.toString()));
 });
 
 module.exports = miRouter
